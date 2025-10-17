@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+
+    <style>
+        h1 { font-size: 82pt; }
+
+        div {
+            background-color: #ccc;
+            margin: 24px;
+            width: calc(25% - 48px);
+            height: 200px;
+            float: left;            
+        }
+
+        @media screen and (max-width: 900px) {
+            h1 { font-size: 48pt; }
+            div {
+                background-color: #00c;
+                margin: 12px;
+                width: calc(25% - 24px);
+            }
+        }
+
+        @media screen and (max-width: 600px) {
+            h1 { font-size: 24pt; }
+            div {
+                float: none;
+                background-color: #c00;
+                width: calc(100% - 24px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Queries</h1>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+</html>

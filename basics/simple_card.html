@@ -1,0 +1,106 @@
+<!DOCTYPE>
+<html>
+    <head>
+        <title>Simple Card</title>
+
+        <style>
+            .cardsContainer {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-evenly;
+            }
+
+            .card {
+                display: flex;
+                flex-direction: column;
+                width: 300px;
+                background-color: blue;
+                padding: 14px;
+                margin: 12px;
+                border-radius: 16px;
+                box-shadow: 0 4px 8px blue;
+            }
+
+            .card .img {
+                width: 100%;
+                height: 300px;
+                background-image: url("images/cinderalla.jpg");
+                background-size: cover;
+                background-position: top center;
+                border-radius: 8px;
+            }
+
+            .card .rapunzel {background-image: url("images/rapunzel.webp");}
+
+            .card .tiana {background-image: url("images/tiana.jpg");}
+
+            .card .ariel {background-image: url("images/Ariel.jpg");}
+
+            .card .desc {
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                font-size: 12pt;
+                margin: 8px;
+                flex-grow: 2;
+            }
+
+            .card a:link,
+            .card a:active,
+            .card a:visited {
+                display: block;
+                background-color: rgb(7, 82, 232);
+                color: rgb(133, 144, 197);
+                padding: 12px;
+                border-radius: 8px;
+                font-weight: bold;
+                text-transform: uppercase;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-align: center;
+                text-decoration: none;
+            }
+
+            .card a:hover,
+            .card a:focus {
+                background-color: rgb(171, 171, 224);
+                color: #fff;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>My Favorite Games</h1>
+
+        <div class="cardsContainer">
+        <div class="card">
+            <div class="img Cinderalla"></div>
+            <div class="desc">
+                <p>Cinderella is the archetypal name of a popular European folk tale and literary character, famous for her transformation from a mistreated stepdaughter to a princess through magical help, often involving a glass slipper. The story teaches morals like kindness and forgiveness, and the name "Cinderella" has become synonymous with unexpected success after obscurity. The tale has countless ancient and medieval variants worldwide, with well-known literary versions by Basile, the Brothers Grimm, and Charles Perrault, whose version is the basis for the classic 1950 Disney film</p>                
+            </div>
+            <a href="#">Read More</a>
+        </div>
+
+         <div class="card">
+            <div class="img Rapunzel"></div>
+            <div class="desc">
+                <p>Rapunzel is a character from a Brothers Grimm fairy tale and Disney's film Tangled, a princess with magical golden hair who was imprisoned in a tower by an evil witch. In the Disney version, she escapes her tower with the help of Flynn Rider to see the floating lights and discover her true identity as the princess of Corona. The name "Rapunzel" can also refer to the fairy tale itself, which has been retold in many forms and is one of the most famous tales from the Brothers Grimm.</p>                
+            </div>
+            <a href="#">Read More</a>
+        </div>    
+
+        <div class="card">
+            <div class="img Tiana"></div>
+            <div class="desc">
+                <p>Tiana Rogers is a fictional character in Walt Disney Pictures' animated film The Princess and the Frog. Created by writers and directors Ron Clements and John Musker and animated by Mark Henn, Tiana is voiced by Anika Noni Rose, with Elizabeth M. Dampier voicing the character as a child. </p>                
+            </div>
+            <a href="#">Read More</a>
+        </div>    
+
+        <div class="card">
+            <div class="img Ariel"></div>
+            <div class="desc">
+                <p>Ariel is a fictional character in Walt Disney Pictures' animated film The Little Mermaid. Voiced by Jodi Benson, Ariel is the youngest daughter of King Triton and Queen Athena of an underwater kingdom called Atlantica. She is often rebellious, and in the first film, she longs to be a part of the human world.</p>                
+            </div>
+            <a href="#">Read More</a>
+        </div>    
+        </div>
+    </body>
+</html>
