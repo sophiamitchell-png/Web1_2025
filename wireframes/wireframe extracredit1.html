@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clear Glass Wireframe</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f7f4ef;
+      color: #ffffff;
+      border: 2px solid #a920a2;
+    }
+
+    nav {
+      background-color: #12084f;
+      padding: 15px;
+      text-align: center;
+      border-bottom: 2px solid #a920a2;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 8px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .header {
+      width: 100%;
+      height: 250px;
+      background-color: #dfe7ff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 36px;
+      font-weight: bold;
+      color: hsl(224, 78%, 82%);
+      border-bottom: 2px solid #a920a2;
+      border-top: 2px solid #a920a2;
+    }
+
+    .founder-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 40px 80px;
+      gap: 40px;
+      background-color: #f7f4ef;
+      border-top: 2px solid #a920a2;
+    }
+
+    .founder-text {
+      flex: 1;
+      border: 2px solid #a920a2;
+      background-color: #fff;
+      padding: 25px;
+    }
+
+    .founder-text h2 {
+      color: #0c0c53;
+      margin-bottom: 15px;
+    }
+
+    .founder-text p {
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .info-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      flex: 1;
+      border: 2px solid #a920a2;
+      padding: 20px;
+      background-color: #fff;
+    }
+
+    .info-box {
+      border: 2px solid #a920a2;
+      background-color: #fdfdfd;
+      text-align: center;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .img-placeholder {
+      width: 100%;
+      height: 100px;
+      background-color: #e2e5ff;
+      border: 2px solid #a920a2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      color: #a4aef8;
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      background-color: #120d54;
+      color: #fff;
+      padding: 8px 0;
+      font-weight: bold;
+      border: 2px solid #a920a2;
+    }
+
+    @media (max-width: 900px) {
+      .founder-section {
+        flex-direction: column;
+      }
+
+      .info-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <a href="#">About Us</a> |
+    <a href="#">Services</a> |
+    <a href="#">Our Values</a> |
+    <a href="#">State of the Industry</a> |
+    <a href="#">Places We Work</a> |
+    <a href="#">Testimonials</a> |
+    <a href="#">Contact Us</a>
+  </nav>
+
+  <div class="header">
+    HEADER
+  </div>
+
+  <section class="founder-section">
+
+    <div class="founder-text">
+      <h2>OUR FOUNDER,<br>A TRUE LEADER, ALANAH RODRIGUEZ</h2>
+      <p>Alanah Rodriguez is best known for saying “Nobody leaves here without learning something new, everyday.” Founder and Chief Executive Officer of Clear Glass, Rodriguez is a hands-on leader who continually helps to perfect Clear Glass’ products, improving transaction friction points, and providing the best rates for clients.</p>
+      <p>Rodriguez believes that by tracking and monitoring the right data, you can improve on anything in business. “Having a team of 105 professionals also helps,” she often adds.</p>
+      <p>Clear Glass improved scratch resistance by 60% in the last two years. They’ve also cut credit rebills in half and switched to a primarily electronic accounting system. She is proudest of how the quality accounting she’s responsible for complements the quality of Clear Glass’ products.</p>
+    </div>
+
+
+    <div class="info-grid">
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>BIOGRAPHY</p>
+      </div>
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>OUR OFFICE</p>
+      </div>
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>OUR FOUNDER</p>
+      </div>
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>REFERRALS</p>
+      </div>
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>FORMS</p>
+      </div>
+      <div class="info-box">
+        <div class="img-placeholder">IMAGE</div>
+        <p>HISTORY</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>

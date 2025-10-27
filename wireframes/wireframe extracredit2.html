@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wireframe Layout</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 40px;
+      background-color: #eaeaea;
+      border-bottom: 2px solid #000;
+    }
+
+    .nav-left, .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    header a {
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header a:hover {
+      text-decoration: underline;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .btn {
+      border: 2px solid #000;
+      background-color: #000;
+      color: #fff;
+      padding: 6px 12px;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    .hero {
+      background-color: #cfcfcf;
+      text-align: center;
+      padding: 60px 20px;
+      border-bottom: 2px solid #000;
+    }
+
+    .hero h1 {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      max-width: 600px;
+      margin: 0 auto 20px auto;
+      color: #333;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    .hero-box {
+      width: 60%;
+      height: 250px;
+      border: 2px solid #000;
+      margin: 0 auto;
+      position: relative;
+      background-color: #fff;
+    }
+
+    .hero-box::before,
+    .hero-box::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .hero-box::before {
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+      transform: rotate(45deg);
+      transform-origin: center;
+      width: 141%;
+      left: -20%;
+      top: -20%;
+    }
+
+    .hero-box::after {
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+      transform: rotate(-45deg);
+      transform-origin: center;
+      width: 141%;
+      left: -20%;
+      top: -20%;
+    }
+
+    .features {
+      display: flex;
+      justify-content: space-between;
+      padding: 60px 80px;
+      background-color: #f7f7f7;
+    }
+
+    .features-text {
+      flex: 1;
+      padding-right: 40px;
+    }
+
+    .features-text h2 {
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+
+    .features-text p {
+      color: #333;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .features-text a {
+      font-weight: bold;
+      color: #000;
+      text-decoration: none;
+    }
+
+    .features-right {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .feature-img {
+      width: 80px;
+      height: 80px;
+      border: 2px solid #000;
+      position: relative;
+      background-color: #fff;
+      flex-shrink: 0;
+    }
+
+    .feature-img::before,
+    .feature-img::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+
+    .feature-img::before {
+      border-top: 2px solid #000;
+      border-right: 2px solid #000;
+      transform: rotate(45deg);
+      transform-origin: center;
+      width: 141%;
+      left: -20%;
+      top: -20%;
+    }
+
+    .feature-img::after {
+      border-top: 2px solid #000;
+      border-left: 2px solid #000;
+      transform: rotate(-45deg);
+      transform-origin: center;
+      width: 141%;
+      left: -20%;
+      top: -20%;
+    }
+
+    .feature-item p {
+      color: #333;
+      line-height: 1.4;
+    }
+
+    @media (max-width: 900px) {
+      .features {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .features-text, .features-right {
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-left">
+      <a href="#">Feature</a>
+      <a href="#">User Examples</a>
+      <a href="#">Pricing</a>
+      <a href="#">Resources ▾</a>
+    </div>
+
+    <div class="logo">Company Logo</div>
+
+    <div class="nav-right">
+      <a href="#">Docs</a>
+      <a href="#" class="btn">GET STARTED</a>
+    </div>
+  </header>
+
+  <section class="hero">
+    <h1>Title copy goes here</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.</p>
+    <a href="#" class="btn">GET STARTED</a>
+
+    <div class="hero-box"></div>
+  </section>
+
+  <section class="features">
+    <div class="features-text">
+      <h2>Features section</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros. Quisque quis euismod lorem. Etiam sodales ac felis id interdum.</p>
+      <a href="#">Learn More →</a>
+    </div>
+
+    <div class="features-right">
+      <div class="feature-item">
+        <div class="feature-img"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-img"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+
+      <div class="feature-item">
+        <div class="feature-img"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse tincidunt sagittis eros.</p>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
