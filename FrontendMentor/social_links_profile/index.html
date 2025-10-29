@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profile Card</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #141414; 
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      background-color: #1f1f1f;
+      border-radius: 10px;
+      padding: 30px 40px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 90%;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .card h2 {
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+
+    .location {
+      color: #ff89f9; 
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .bio {
+      font-size: 14px;
+      color: #ccc;
+      margin-bottom: 25px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .btn {
+      background-color: #333333;
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 10px;
+      border-radius: 8px;
+      transition: background-color 0.3s ease, transform 0.2s;
+    }
+
+    .btn:hover {
+      background-color: #f97fd8;
+      color: #1f1f1f;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <img class="profile-img" src="assets/images/sophia.jpeg" alt="Sophia">
+      <h2>Sophia Mitchell👉👈</h2>
+      <p class="location">Fort Myers Florida</p>
+      <p class="bio">"Front-end developer, hardcore gamer, and pro anime watcher."</p>
+      <div class="buttons">
+        <a href="#" class="btn">Cute☺️</a>
+        <a href="#" class="btn">Silly🤪</a>
+        <a href="#" class="btn">Discord Kitten😽</a>
+        <a href="#" class="btn">Has A Dark Side😈</a>
+        <a href="#" class="btn">A Wittle Peanut😖</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
