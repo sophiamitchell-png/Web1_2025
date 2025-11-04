@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sophia Mitchell's Web Dev Portfolio</title>
+  <style>
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      color: #333;
+      background-color: #f8fafc;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #4f46e5, #6366f1);
+      color: #fff;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    header h1 {
+      font-size: 2.3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    nav {
+      background-color: #1e293b;
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+
+    nav a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+
+    section {
+      background: #ffffff;
+      padding: 2rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    }
+
+
+
+    h2 {
+      color: #1e3a8a;
+      display: inline-block;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+
+    .project {
+      background-color: #f9fafb;
+      border: 1px solid #e5e7eb;
+      padding: 1rem;
+      border-radius: 10px;
+      margin-bottom: 1.2rem;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+
+
+    .project a {
+      background-color: #4f46e5;
+      color: #fff;
+      text-decoration: none;
+      font-weight: 600;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+      transition: background-color 0.3s ease;
+    }
+
+
+    footer {
+      background-color: #1e293b;
+      color: white;
+      padding: 1.5rem;
+      margin-top: 2rem;
+    }
+
+
+
+    @media (min-width: 768px) {
+      .project {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Sophia Mitchell's Web Dev Portfolio</h1>
+    <p>Welcome to my Web Development homepage! This page shows all the projects I’ve built and the skills I’ve learned throughout this semester.</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#class-projects">Class Projects</a></li>
+      <li><a href="#frontend-mentor">FrontendMentor Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section id="class-projects">
+      <h2>Class Projects</h2>
+
+      <article class="project">
+        <h3>Project 1: Vacation Destination</h3>
+        <p>Demonstrated use of semantic HTML and basic page layout.</p>
+        <a href="vacationdestination.html" target="_blank">View Project</a>
+      </article>
+
+      <article class="project">
+        <h3>Project 2: Perfect Meal</h3>
+        <p>Practiced text formatting, images, and list elements in HTML.</p>
+        <a href="perfect meal.html" target="_blank">View Project</a>
+      </article>
+
+      <article class="project">
+        <h3>Project 3: Wireframe</h3>
+        <p>Built a wireframe using HTML and CSS to plan web layouts visually.</p>
+        <a href="layout of wireframe.html" target="_blank">View Project</a>
+      </article>
+    </section>
+
+    <section id="frontend-mentor">
+      <h2>FrontendMentor Projects</h2>
+
+      <article class="project">
+        <h3>Social Links Profile</h3>
+        <p>Demonstrated centering with Flexbox and clean card design.</p>
+        <a href="FrontendMentor/social_links_profile/" target="_blank">View Solution</a>
+      </article>
+
+      <article class="project">
+        <h3>Three Column Layout</h3>
+        <p>Used CSS Grid to create responsive product layouts.</p>
+        <a href="FrontendMentor/ThreeColumnLayout/" target="_blank">View Solution</a>
+      </article>
+    </section>
+  </main>
+
+  <footer id="contact">
+    <p>2025 Sophia Mitchell</p>
+    <p>Contact: <a href="mailto:sophia.mitchell@cougarmail.email">sophia.mitchell@cougarmail.email</a></p>
+  </footer>
+</body>
+</html>
