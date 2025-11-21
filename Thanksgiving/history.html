@@ -1,10 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport"/>
     <title>Thanksgiving History</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #faf7f2;
+            color: #4a3523;
+        }
+
+        header {
+            background: linear-gradient(45deg, #c96f36, #e8a65b);
+            padding: 3rem 1rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            text-shadow: 1px 2px 4px rgba(0,0,0,0.25);
+        }
+
+        nav {
+            background: #f1e4d3;
+            padding: 0.75rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a3c27;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #c96f36;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .history-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        .history-item h2 {
+            color: #c96f36;
+            margin-top: 0;
+            font-size: 1.7rem;
+        }
+
+        .history-item p {
+            line-height: 1.6;
+            font-size: 1.1rem;
+        }
+
+        .history-item img {
+            width: 100%;
+            border-radius: 12px;
+            margin-bottom: 1rem;
+        }
+
+        footer {
+            margin-top: 4rem;
+            background: #e8d4bd;
+            padding: 1rem;
+            text-align: center;
+            color: #4a3523;
+        }
+    </style>
 </head>
 <body>
 
@@ -21,26 +107,25 @@
 </nav>
 
 <main>
+    <section class="history-flex">
+        <article class="history-item">
+            <img src="https://i0.wp.com/www.mississippifreepress.org/wp-content/uploads/2021/11/thanksgiving_cred-Bettman-Getty-Images.jpg?fit=1200%2C800&ssl=1" alt="1621 First Thanksgiving Feast" />
+            <h2>1621: The First Feast</h2>
+            <p>The Pilgrims and the Wampanoag Tribe shared a three-day harvest celebration.</p>
+        </article>
 
-<section class="history-flex">
+        <article class="history-item">
+            <img src="https://compote.slate.com/images/1c1c64c8-bc97-4842-b97c-025a5f3dd35f.jpeg?crop=1560%2C1040%2Cx0%2Cy0" alt="Abraham Lincoln Declares Thanksgiving" />
+            <h2>1863: Lincoln Declares a Holiday</h2>
+            <p>President Abraham Lincoln made Thanksgiving a national holiday during the Civil War.</p>
+        </article>
 
-    <article class="history-item">
-        <h2>1621: The First Feast</h2>
-        <p>The Pilgrims and the Wampanoag Tribe shared a three-day harvest celebration.</p>
-    </article>
-
-    <article class="history-item">
-        <h2>1863: Lincoln Declares a Holiday</h2>
-        <p>President Abraham Lincoln made Thanksgiving a national holiday during the Civil War.</p>
-    </article>
-
-    <article class="history-item">
-        <h2>Modern Traditions</h2>
-        <p>Family gatherings, parades, football games, and preparing a turkey dinner have become yearly customs.</p>
-    </article>
-
-</section>
-
+        <article class="history-item">
+            <img src="https://media.cntraveler.com/photos/691ce34a8d3fb8c091df8458/16:9/w_2448,h_1377,c_limit/Screenshot%202025-11-18%20at%204.18.53%E2%80%AFPM.png" alt="Modern Thanksgiving Traditions" />
+            <h2>Macy's Day Parade</h2>
+            <p>The Macy's Thanksgiving Day Parade is an annual parade in New York City presented by the American-based department store chain Macy's. The parade first took place in 1924, tying it for the second-oldest Thanksgiving parade in the United States with America's Thanksgiving Parade in Detroit.</p>
+        </article>
+    </section>
 </main>
 
 

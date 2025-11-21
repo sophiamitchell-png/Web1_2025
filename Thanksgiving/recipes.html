@@ -1,85 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Thanksgiving Recipes</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            background: #faf7f2;
+            color: #4a3523;
+        }
+
+        header {
+            background: linear-gradient(45deg, #c96f36, #e8a65b);
+            padding: 3rem 1rem;
+            text-align: center;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+            letter-spacing: 1px;
+            text-shadow: 1px 2px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        nav {
+            background: #f1e4d3;
+            padding: 0.75rem;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #5a3c27;
+            font-weight: bold;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #c96f36;
+        }
+
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 1rem;
+        }
+
+        .recipe-card {
+            background: white;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            color: #c96f36;
+            margin-top: 0;
+            font-size: 2rem;
+        }
+
+        h3 {
+            color: #8a5a3a;
+            margin-top: 1.5rem;
+        }
+
+        ul, ol {
+            padding-left: 1.5rem;
+            line-height: 1.6;
+        }
+
+        .prep-box {
+            background: #fbe7cd;
+            border-left: 6px solid #c96f36;
+            padding: 0.75rem 1rem;
+            font-style: italic;
+            margin: 1rem 0;
+            border-radius: 8px;
+        }
+
+        footer {
+            margin-top: 4rem;
+            background: #e8d4bd;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: #4a3523;
+        }
+    </style>
 </head>
 <body>
+    <header>
+        <h1>Thanksgiving Recipes</h1>
+    </header>
 
-<header>
-    <h1>Thanksgiving Recipes</h1>
-</header>
-
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="recipes.html">Recipes</a></li>
-        <li><a href="history.html">History</a></li>
-    </ul>
-</nav>
-
-<main>
-
-
-    <article class="recipe-card">
-        <h2>Classic Thanksgiving Stuffing</h2>
-
-        <blockquote class="prep-box">
-            Prep Time: 30 mins
-        </blockquote>
-
-        <h3>Ingredients</h3>
+    <nav>
         <ul>
-            <li>Bread cubes</li>
-            <li>Celery
-                <ul><li>Check Freshness</li></ul>
-            </li>
-            <li>Onions</li>
-            <li>Sage
-                <ul><li>Check Freshness</li></ul>
-            </li>
-            <li>Chicken broth</li>
-            <li>Butter</li>
-            <li>Parsley
-                <ul><li>Check Freshness</li></ul>
-            </li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="recipes.html">Recipes</a></li>
+            <li><a href="history.html">History</a></li>
         </ul>
+    </nav>
 
-        <h3>Steps</h3>
-        <ol>
-            <li>Sauté vegetables in butter.</li>
-            <li>Mix with bread cubes and broth.</li>
-            <li>Bake until golden brown.</li>
-        </ol>
-    </article>
+    <main>
+        <article class="recipe-card">
+            <h2>Classic Thanksgiving Stuffing</h2>
+            <img src="https://hostthetoast.com/wp-content/uploads/2019/11/Croissant-Sausage-Stuffing-3.jpg" alt="Classic Thanksgiving Stuffing">
+            <blockquote class="prep-box">Prep Time: 30 mins</blockquote>
 
-    <article class="recipe-card">
-        <h2>Pumpkin Pie</h2>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Bread cubes</li>
+                <li>Celery
+                    <ul><li>Check Freshness</li></ul>
+                </li>
+                <li>Onions</li>
+                <li>Sage
+                    <ul><li>Check Freshness</li></ul>
+                </li>
+                <li>Chicken broth</li>
+                <li>Butter</li>
+                <li>Parsley
+                    <ul><li>Check Freshness</li></ul>
+                </li>
+            </ul>
 
-        <blockquote class="prep-box">
-            Prep Time: 20 mins
-        </blockquote>
+            <h3>Steps</h3>
+            <ol>
+                <li>Sauté vegetables in butter.</li>
+                <li>Mix with bread cubes and broth.</li>
+                <li>Bake until golden brown.</li>
+            </ol>
+        </article>
 
-        <h3>Ingredients</h3>
-        <ul>
-            <li>Pumpkin purée</li>
-            <li>Pie crust</li>
-            <li>Cinnamon</li>
-            <li>Evaporated milk</li>
-            <li>Sugar</li>
-        </ul>
+        <article class="recipe-card">
+            <h2>Pumpkin Pie</h2>
+            <img src="https://ichef.bbci.co.uk/food/ic/food_16x9_1600/recipes/pumpkin_pie_60904_16x9.jpg" alt="Pumpkin Pie">
+            <blockquote class="prep-box">Prep Time: 20 mins</blockquote>
 
-        <h3>Steps</h3>
-        <ol>
-            <li>Mix filling ingredients.</li>
-            <li>Pour into crust.</li>
-            <li>Bake until set.</li>
-        </ol>
-    </article>
+            <h3>Ingredients</h3>
+            <ul>
+                <li>Pumpkin purée</li>
+                <li>Pie crust</li>
+                <li>Cinnamon</li>
+                <li>Evaporated milk</li>
+                <li>Sugar</li>
+            </ul>
 
-</main>
+            <h3>Steps</h3>
+            <ol>
+                <li>Mix filling ingredients.</li>
+                <li>Pour into crust.</li>
+                <li>Bake until set.</li>
+            </ol>
+        </article>
+    </main>
 
 
 </body>
