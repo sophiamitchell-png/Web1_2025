@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Single Price Grid Component</title>
+
+
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    :root {
+      --cyan: hsl(179, 62%, 43%);
+      --cyan-light: hsl(179, 62%, 48%);
+      --yellow: hsl(71, 73%, 54%);
+      --gray: hsl(218, 22%, 67%);
+      --bg: hsl(204, 43%, 93%);
+    }
+
+    body {
+      background: var(--bg);
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 20px;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .card {
+      max-width: 700px;
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 18px rgba(0,0,0,0.12);
+    }
+
+    .intro {
+      padding: 40px;
+    }
+
+    .intro h1 {
+      color: var(--cyan);
+      margin: 0 0 12px;
+      font-size: 28px;
+    }
+
+    .intro .subtitle {
+      color: var(--yellow);
+      margin-bottom: 15px;
+      font-size: 18px;
+    }
+
+    .intro p {
+      color: var(--gray);
+      line-height: 1.6;
+      max-width: 500px;
+    }
+
+    .sections {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .billing {
+      background: var(--cyan);
+      color: #fff;
+      padding: 40px;
+    }
+
+    .billing h2 {
+      margin: 0 0 18px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .pricing {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 8px;
+    }
+
+    .pricing .value {
+      font-size: 32px;
+      font-weight: 700;
+    }
+
+    .pricing .period {
+      opacity: 0.75;
+      font-size: 16px;
+    }
+
+    .billing .note {
+      opacity: 0.85;
+      margin-bottom: 25px;
+    }
+
+    .billing button {
+      background: var(--yellow);
+      color: white;
+      width: 100%;
+      padding: 14px 0;
+      border: none;
+      font-size: 18px;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 600;
+    }
+
+    .why {
+      background: var(--cyan-light);
+      color: white;
+      padding: 40px;
+    }
+
+    .why h2 {
+      margin: 0 0 20px;
+      font-size: 20px;
+      font-weight: 600;
+    }
+
+    .why ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      line-height: 1.6;
+      opacity: 0.9;
+    }
+
+    @media (max-width: 650px) {
+      .sections {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 12px;
+      color: #555;
+    }
+
+    footer a {
+      color: var(--cyan);
+    }
+
+  </style>
+</head>
+<body>
+   <div class="card">
+    <div class="intro">
+      <h1>Join our community</h1>
+      <div class="subtitle">30-day, hassle-free money back guarantee</div>
+      <p>
+        Gain access to our full library of tutorials along with expert code reviews.
+        Perfect for any developers who are serious about honing their skills.
+      </p>
+    </div>
+
+    <div class="sections">
+      <div class="billing">
+        <h2>Monthly Subscription</h2>
+
+        <div class="pricing">
+          <div class="value">$29</div>
+          <div class="period">per month</div>
+        </div>
+
+        <div class="note">Full access for less than $1 a day</div>
+
+        <button>Sign Up</button>
+      </div>
+
+      <div class="why">
+        <h2>Why Us</h2>
+        <ul>
+          <li>Tutorials by industry experts</li>
+          <li>Peer & expert code review</li>
+          <li>Coding exercises</li>
+          <li>Access to our GitHub repos</li>
+          <li>Community forum</li>
+          <li>Flashcard decks</li>
+          <li>New videos every week</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  
+  <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Sophia Mitchell</a>.
+    </p>
+  </footer>
+</body>
+</html>
